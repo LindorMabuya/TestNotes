@@ -1,0 +1,8 @@
+
+		//under android:label
+        android:name="com.mabuya.lindor.mobilehealthacre_android_services.config.util.App"
+        
+		//include all services under </activity>
+        <service android:name=".services.Impl.RegisterAccountServiceImpl"/>
+        <service android:name=".services.Impl.GetPlanServiceImpl"/>
+  
