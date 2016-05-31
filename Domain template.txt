@@ -1,0 +1,45 @@
+ implements Serializable{
+ 
+ //variable declarations
+  private Long id;
+ 
+ //empty constructor
+ private className(){
+ }
+ 
+ //builder constructor
+ public className(Builder builder){
+ 
+	//initialize variables
+	 id = builder.id;
+ }
+ 
+ //getters
+ public Long getId(){
+	return id;
+ }
+ 
+ //builder class
+ public static class Builder{
+ 
+	//variable declarations
+	private Long id;
+	
+	//initialize variables
+    public Builder id(Long value)
+    {
+        this.id = value;
+        return this;
+    }
+	
+	//copy class
+	public Builder copy(className value)
+    {
+        this.id = value.getId();
+		return this;
+	}
+	
+	//create class instance
+	 public className build(){return new className(this);}
+ }
+}
