@@ -1,0 +1,21 @@
+public class classNameFactoryImpl implements classNameFactory {
+
+    private static classNameFactoryImpl name = null;
+
+    public classNameFactoryImpl() {
+    }
+
+    public static  classNameFactoryImpl getInstance()
+    {
+        if(name == null)
+            name = new classNameFactoryImpl();
+        return name;
+    }
+
+	//method in factory interface
+    @Override
+    public className createClassName(Long id) {
+        className object = new className.Builder().id(id).build();
+        return object;
+    }
+}
