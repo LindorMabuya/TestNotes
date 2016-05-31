@@ -1,4 +1,4 @@
 public class DBConstants {
-    public static final String DATABASE_NAME="lindorDB";
+    public static final String DATABASE_NAME="lindor";
     public static final int DATABASE_VERSION=1;
 }
