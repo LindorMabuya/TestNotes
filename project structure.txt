@@ -1,0 +1,20 @@
+main: 1.config - util (App) //don't code
+					  (DomainState) //don't code
+			   - databases(DBCostsants) // don't code
+	  2.domain
+	  3.factories - domain factories (interfaces)
+				  - factories implementation
+	  4.repositories - generic repository(interface)
+					 - repository per domain(interfaces)
+					 - repository implementation
+	  5.services - services (interfaces)
+				 - services implementation
+				 
+android test: 1. repositories tests 
+			  2. services tests
+
+test: 1. factories tests
+      2. appUnitTestSuit //modify	  
+	  
+NB: update AndroidManifest.xml
+    build.gladle(Module:app)
